@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FriendZone - Instagram Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>FriendZone</h1>
+        <input type="text" class="search-bar" placeholder="Search...">
+    </header>
+    <nav>
+        <a href="#feed">Feed</a>
+        <a href="#profile">Profile</a>
+        <a href="#upload">Upload</a>
+        <a href="#messages">Messages</a>
+        <a href="#notifications">Notifications</a>
+        <a href="#settings">Settings</a>
+    </nav>
+    <div class="container">
+        <section id="upload" class="upload">
+            <h2>Upload a Photo</h2>
+            <form id="upload-form">
+                <input type="file" id="upload-file" accept="image/*" required>
+                <textarea id="upload-caption" rows="2" placeholder="Write a caption..." required></textarea>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+        <section id="feed" class="feed">
+            <h2>News Feed</h2>
+            <div id="posts"></div>
+        </section>
+        <section id="profile" class="profile">
+            <h2>My Profile</h2>
+            <p><strong>Name:</strong> Fernando Bueno</p>
+            <p><strong>Email:</strong> fernando@example.com</p>
+            <button>Edit Profile</button>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 FriendZone. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
